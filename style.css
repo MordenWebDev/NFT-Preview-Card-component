@@ -1,0 +1,175 @@
+/* css reset */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* default body style */
+  
+  body {
+    position: relative;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  
+  h1,
+  span {
+    color: white;
+  }
+  
+  h1:hover,
+  span:hover {
+    color: hsl(178, 100%, 50%);
+  }
+  
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.6;
+  }
+  
+  /* card style */
+  
+  .card {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+  }
+  /* start of card head */
+  .card-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  
+  /* card image property */
+  
+  .header-image {
+    width: 300px;
+    /* margin: 1rem; */
+  
+    border-radius: 0.5rem;
+  }
+  .hover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: hsla(178, 100%, 50%, 0.3);
+    z-index: 1;
+  }
+  
+  .invisibe {
+    opacity: 0;
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    padding: 7.9rem;
+    left: 0.08rem;
+    border-radius: 0.5rem;
+  }
+  .hover:hover .invisibe {
+    opacity: 1;
+  }
+  
+  /* start of card body */
+  .card-body {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4rem;
+    flex-direction: column;
+  }
+  
+  /* // width of para in card body */
+  .para-width {
+    margin-top: 0%;
+    max-width: 300px;
+  }
+  
+  /* tow logo in body of card */
+  .logo-contaienr {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* card symnol image property */
+  .symbol img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.4rem;
+  }
+  /* small svg and text fled in logo secetion */
+  .symbol {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* //card footer */
+  
+  .footer {
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+  
+    width: 80%;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 0%;
+    padding-top: 0%;
+    margin-left: 3.5rem;
+  }
+  /* imag in footer section */
+  .pro-file-image {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  /* cyan color para in footer */
+  .cyan-para {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+  }
+  
+
+  .attribution{
+      color:white;
+      font-size:.7rem;
+  }
+  @media only screen and (max-width: 500px) {
+    .card {
+      max-width: 300px;
+    }
+    .header-image {
+      width: 250px;
+      margin: 1rem;
+      border-radius: 0.5rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .card-body {
+      margin-left: 2rem;
+    }
+    .footer-para {
+      font-size: 1rem;
+    }
+    .footer {
+      margin-left: 1rem;
+      width: 90%;
+    }
+  }
+  
